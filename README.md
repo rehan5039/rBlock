@@ -13,6 +13,19 @@
 - **Real-Time Statistics**: Displays the number of blocked ads and malicious sites within the extension popup.
 - **User-Friendly Interface**: Simple toggle to enable or disable blocking with a single click.
 
+## Installation Guide
+
+Choose your browser below to install **rBlock**:
+
+- [**Chrome**](https://github.com/rehan5039/rBlock/tree/main?tab=readme-ov-file#installation-in-chrome) - Available on the Repository.
+- **Firefox** - Coming soon! We are working on making **rBlock** available on Firefox.
+- **Microsoft Edge** - Coming soon! We are actively developing support for Microsoft Edge.
+- **Opera** - Support for Opera is under consideration. Stay tuned for updates.
+
+We are dedicated to expanding support to additional browsers. Keep an eye on this section for updates!
+
+
+
 ## Installation in Chrome
 
 To install **rBlock** locally:
