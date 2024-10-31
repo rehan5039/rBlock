@@ -32,7 +32,7 @@ To install **rBlock** locally:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/rBlock.git
+   git clone https://github.com/rehan5039/rBlock/
    
 2. Open Chrome, go to **chrome://extensions/**, and enable **Developer mode**.
 3. Click **Load unpacked** and select the `rBlock` directory from this repository.
