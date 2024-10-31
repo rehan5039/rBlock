@@ -1,3 +1,4 @@
 # rBlock
 
-# ![rBlock Logo](img/rBlock logo.png) rBlock 
+# ![rBlock Logo](img/rBlock-logo.png)
+
