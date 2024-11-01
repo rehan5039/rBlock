@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="icons/rBlock-logo.png" alt="rBlock Logo" width="200" style="margin-bottom: -10px;"/>
+  <img src="icons/rBlock logo.png" alt="rBlock Logo" width="200" style="margin-bottom: -10px;"/>
   <h1 style="margin-top: 0;">rBlock</h1>
 </div>
 
