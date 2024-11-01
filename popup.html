@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rBlock</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 400px; /* Maximum width */
+            width: 90%; /* Responsive width */
+            height: 400px; /* Fixed height */
+        }
+        .card:hover {
+            transform: translateY(-4px); /* Elevate on hover */
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+        }
+        .button {
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #1e3a8a;
+            transform: translateY(-2px); /* Slight elevation on hover */
+        }
+        .status {
+            background-color: #e0f7fa;
+            border: 1px solid #b2ebf2;
+            border-radius: 8px;
+            padding: 8px 12px;
+            display: inline-block;
+        }
+        @media (max-width: 768px) {
+            .card {
+                padding: 24px; /* Smaller padding for smaller devices */
+                height: auto; /* Allow height to adjust on smaller screens */
+            }
+            .button {
+                font-size: 0.9rem; /* Slightly smaller button text */
+            }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="card text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">rBlock</h1>
+        
+        <div class="mb-6">
+            <button id="toggle" class="button bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg w-full">
+                Toggle Blocking
+            </button>
+        </div>
+
+        <div class="text-left mb-4">
+            <p class="text-lg font-semibold text-gray-600">Status: 
+                <span id="status" class="status text-gray-800">Enabled</span>
+            </p>
+        </div>
+
+        <div class="mt-6 text-left">
+            <div class="mb-4">
+                <p class="text-lg font-semibold text-gray-600">Ads Blocked: 
+                    <span id="adsBlocked" class="text-blue-600 font-bold">0</span>
+                </p>
+            </div>
+            <div>
+                <p class="text-lg font-semibold text-gray-600">Malicious Sites Blocked: 
+                    <span id="maliciousBlocked" class="text-red-600 font-bold">0</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <input type="text" id="allowlistInput" placeholder="Enter site to unblock" 
+                   class="mb-4 w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" />
+            <button id="addAllowlist" class="button bg-green-600 text-white font-semibold py-3 px-6 rounded-lg w-full">
+                Add to Allowlist
+            </button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

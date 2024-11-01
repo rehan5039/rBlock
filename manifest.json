@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "rBlock",
+    "version": "1.9",
+    "description": "Ads block",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "storage",
+        "webNavigation"  
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/16x16.png",
+            "24": "icons/24x24.png",
+            "32": "icons/32x32.png",
+            "48": "icons/48x48.png",
+            "64": "icons/64x64.png",
+            "180": "icons/180x180.png"
+        }
+    },
+    "icons": {
+        "16": "icons/16x16.png",
+        "24": "icons/24x24.png",
+        "32": "icons/32x32.png",
+        "48": "icons/48x48.png",
+        "64": "icons/64x64.png",
+        "128": "icons/128x128.png",
+        "180": "icons/180x180.png",
+        "192": "icons/192x192.png",
+        "256": "icons/256x256.png",
+        "500": "icons/500x500.png",
+        "512": "icons/512x512.png"
+    }
+  }
